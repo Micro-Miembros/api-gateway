@@ -1,0 +1,20 @@
+spring: 
+  cloud: 
+    gateway: 
+      routes: 
+        - id: class-service 
+          uri: lb://class-service
+          predicates: 
+            - Path=/api/gimnasio/clases/**
+        - id: equipment-service 
+          uri: lb://equipment-service
+          predicates: 
+            - Path=/api/gimnasio/equipos/**
+        - id: member-service 
+          uri: lb://member-service
+          predicates: 
+            - Path=/api/gimnasio/miembros/**
+        - id: trainer-service 
+          uri: lb://trainer-service
+          predicates: 
+            - Path=/api/gimnasio/entrenadores/**

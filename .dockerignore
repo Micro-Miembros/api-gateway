@@ -1,0 +1,12 @@
+# Maven & IDE
+/target
+/.mvn/wrapper/maven-wrapper.jar
+.mvn/
+.git
+.gitignore
+*.iml
+*.class
+*.log
+.DS_Store
+.idea/
+.vscode/
