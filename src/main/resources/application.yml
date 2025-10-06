@@ -1,5 +1,10 @@
 spring: 
   cloud: 
+    loadbalancer:
+      cache:
+        enabled: false
+      ribbon:
+        enabled: false
     gateway: 
       routes: 
         - id: class-service 
